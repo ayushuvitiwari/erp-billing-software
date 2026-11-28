@@ -47,6 +47,9 @@ const loginSuperAdmin = async (req, res) => {
         
 
     } catch (error) {
-        return res.status(500).json({ message: error.message, success: false })
+        return res.status(500).json({ message: 'Invalid User', success: false })
     }
 }
+
+
+module.exports = {loginSuperAdmin}

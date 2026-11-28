@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const bcrypt = require('bcrypt')
 
 
 const superAdminSchema = new mongoose.Schema({
@@ -25,7 +26,6 @@ const superAdminSchema = new mongoose.Schema({
 },{
     timestamps: true,
 })
-
 
 //  password hashing 
 
